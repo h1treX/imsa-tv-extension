@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "IMSA TV Extension",
+  "version": "0.0.1",
+  "description": "Browser extension to easier navigate IMSA TV",
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.imsa.com/tvlive/"],
+      "js": [
+        "js/utils.js",
+        "js/main.js"
+      ]
+    }
+  ]
+}
